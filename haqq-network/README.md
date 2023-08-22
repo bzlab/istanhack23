@@ -1,4 +1,4 @@
-# Sample Hardhat Project
+# haqq-network
 
 - Development address: `0x88AfbAc330579E81A7C686e8AbB3Ad712dF74751`
     - [Explorer Link](https://explorer.testedge2.haqq.network/address/0x88AfbAc330579E81A7C686e8AbB3Ad712dF74751)
