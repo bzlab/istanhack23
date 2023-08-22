@@ -1,0 +1,44 @@
+{
+  "name": "istanhack23-backend",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "node dist/src/index.js",
+    "dev": "npx nodemon dist/src/index.js",
+    "format": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@veramo/core": "^5.1.2",
+    "@veramo/credential-w3c": "^5.1.4",
+    "@veramo/data-store": "^5.1.2",
+    "@veramo/did-comm": "^5.1.2",
+    "@veramo/did-manager": "^5.1.2",
+    "@veramo/did-provider-ethr": "^5.1.2",
+    "@veramo/did-resolver": "^5.1.2",
+    "@veramo/key-manager": "^5.1.2",
+    "@veramo/kms-local": "^5.1.2",
+    "ethers": "^5.7.2",
+    "ethr-did-resolver": "^8.0.0",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "sqlite3": "^5.1.6",
+    "ts-node": "^10.9.1",
+    "web-did-resolver": "^2.0.23"
+  },
+  "type": "module"
+}
