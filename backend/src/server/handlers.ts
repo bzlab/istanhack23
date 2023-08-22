@@ -2,11 +2,11 @@ import { NextFunction, Request, Response } from 'express';
 
 import { agent, identifier } from '../agent/agent.js';
 
-// TODO logging
-export const issueBasicCredential = async (req: Request, res: Response, next: NextFunction) => {
-  const { name, did } = req.body;
+export const issueSocialSecurityCredential = async (req: Request, res: Response, next: NextFunction) => {
+  const { did, tckk } = req.body;
+  console.log(did, tckk);
 
-  if (name === undefined || did === undefined) {
+  if (tckk === undefined || did === undefined) {
     res.status(400).send({ errorMessage: 'credential payload error' });
     return;
   }
@@ -17,16 +17,43 @@ export const issueBasicCredential = async (req: Request, res: Response, next: Ne
         issuer: { id: identifier.did },
         credentialSubject: {
           id: did,
-          name: name,
+          tckk: tckk,
         },
       },
       proofFormat: 'jwt',
     })
     .then((credential) => {
-      // console.log(JSON.stringify(credential, null, 2));
+      console.log(JSON.stringify(credential, null, 2));
       res.json({ credential: credential });
     })
     .catch((error) => {
+      console.log(error);
       next(error); // error handler middleware'ine gonder
     });
+};
+
+export const onboardCardUser = async (req: Request, res: Response, next: NextFunction) => {
+  const { credential } = req.body;
+  console.log(credential);
+
+  if (credential === undefined) {
+    res.status(400).send({ errorMessage: 'payload error' });
+    return;
+  }
+
+  // console.log(credential);
+
+  agent
+    .verifyCredential({ credential })
+    .then((result) => {
+      console.log(result);
+      res.send({verified: result.verified}); // TODO response object nasil olmali?
+    })
+
+    .catch((error) => {
+      console.log(error);
+      next(error); // error handler middleware'ine gonder
+    });
+
+  // TOOD response'i dusun
 };

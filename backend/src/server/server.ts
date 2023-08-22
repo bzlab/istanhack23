@@ -2,7 +2,7 @@ import express, { Express } from 'express';
 import morgan from 'morgan';
 
 import { errorHandler } from './middlewares.js';
-import { issueBasicCredential } from './handlers.js';
+import { issueSocialSecurityCredential, onboardCardUser } from './handlers.js';
 
 const app: Express = express();
 const PORT = 3000;
@@ -13,7 +13,8 @@ const PORT = 3000;
 app.use(express.json()); // -H "Content-type: application/json" // bu header'in gelmesi lazim
 app.use(morgan('combined')); // HTTP request logger
 
-app.post('/issue/basic/', issueBasicCredential);
+app.post('/issue/social/', issueSocialSecurityCredential);
+app.post('/onboard', onboardCardUser);
 
 // You define error-handling middleware last, after other app.use() and routes calls; for example:
 app.use(errorHandler);

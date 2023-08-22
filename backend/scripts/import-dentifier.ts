@@ -1,7 +1,3 @@
-/**
- * TODO
- */
-
 import { agent } from '../src/agent/agent.js';
 
 async function main() {
