@@ -1,12 +1,15 @@
-import Balance from './components/Balance'
+import Account from "./components/Balance";
+import { Navbar } from "./components/Navbar";
+import Onboard from "./components/Onboard";
 
 function App() {
   return (
     <>
-      <h1> Merhaba yalan dunya </h1>
-      <Balance />
+      <Navbar />
+      <Onboard />
+      <Account />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
