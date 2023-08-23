@@ -123,7 +123,7 @@ try {
   }
 }
 
-console.log(agent)
+console.log(agent);
 
 console.log('issuer agent created');
 

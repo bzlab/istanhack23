@@ -2,6 +2,6 @@ import { agent } from './agent/agent.js'; // TODO bu agent nasil init edilmeli: 
 import { startServer } from './server/server.js';
 
 // agent load etsin diye
-console.log(agent.availableMethods()) 
+console.log(agent.availableMethods());
 
 startServer();

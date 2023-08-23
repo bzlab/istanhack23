@@ -4,6 +4,7 @@ import { agent, identifier } from '../agent/agent.js';
 
 export const issueSocialSecurityCredential = async (req: Request, res: Response, next: NextFunction) => {
   const { did, tckk } = req.body;
+  console.log(req.body);
   console.log(did, tckk);
 
   if (tckk === undefined || did === undefined) {
@@ -41,13 +42,11 @@ export const onboardCardUser = async (req: Request, res: Response, next: NextFun
     return;
   }
 
-  // console.log(credential);
-
   agent
     .verifyCredential({ credential })
     .then((result) => {
       console.log(result);
-      res.send({verified: result.verified}); // TODO response object nasil olmali?
+      res.send({ verified: result.verified }); // TODO response object nasil olmali?
     })
 
     .catch((error) => {
@@ -56,4 +55,8 @@ export const onboardCardUser = async (req: Request, res: Response, next: NextFun
     });
 
   // TOOD response'i dusun
+};
+
+export const healthCheck = (req: Request, res: Response, next: NextFunction) => {
+  res.send(200);
 };

@@ -2,7 +2,6 @@
 
 User onboarding, DID VC etc.
 
-
 ## Endpoints
 
 Request Social Security Credential

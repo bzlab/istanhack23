@@ -1,1 +1,106 @@
-{"_type":"export","__export_format":4,"__export_date":"2023-08-22T18:37:49.807Z","__export_source":"insomnia.desktop.app:v2022.4.1","resources":[{"_id":"req_fa1367ba8e2b4c6eb9db83ce961b17d6","parentId":"wrk_8b2b3daf860c42398f7a2a2da404fb14","modified":1692729084974,"created":1692727448079,"url":"http://localhost:3000/onboard","name":"Onboard","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"credential\": {\n\t\t\"credentialSubject\": {\n\t\t\t\"tckk\": \"11111111111\",\n\t\t\t\"id\": \"did:ethr:bageth:0x88AfbAc330579E81A7C686e8AbB3Ad712dF74751\"\n\t\t},\n\t\t\"issuer\": {\n\t\t\t\"id\": \"did:ethr:bageth:0x02a202fe9df5aee7316ebf19fbda86bb45affe0f67cb9b944e55e00fdc6f40b6b4\"\n\t\t},\n\t\t\"type\": [\n\t\t\t\"VerifiableCredential\"\n\t\t],\n\t\t\"@context\": [\n\t\t\t\"https://www.w3.org/2018/credentials/v1\"\n\t\t],\n\t\t\"issuanceDate\": \"2023-08-22T18:02:29.000Z\",\n\t\t\"proof\": {\n\t\t\t\"type\": \"JwtProof2020\",\n\t\t\t\"jwt\": \"eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7InRja2siOiIxMTExMTExMTExMSJ9fSwic3ViIjoiZGlkOmV0aHI6YmFnZXRoOjB4ODhBZmJBYzMzMDU3OUU4MUE3QzY4NmU4QWJCM0FkNzEyZEY3NDc1MSIsIm5iZiI6MTY5MjcyNzM0OSwiaXNzIjoiZGlkOmV0aHI6YmFnZXRoOjB4MDJhMjAyZmU5ZGY1YWVlNzMxNmViZjE5ZmJkYTg2YmI0NWFmZmUwZjY3Y2I5Yjk0NGU1NWUwMGZkYzZmNDBiNmI0In0.NYMb5f6LaMJdIbLeA2iM2_DNKYJcqfLrdqDT-_xeTdIcuN0C-ERgNBIueAe1N9iL-AQ00V_jSFRgwog-D3JISg\"\n\t\t}\n\t}\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_c8a90cb6d0544e708b8d0e34b9afce7b"}],"authentication":{},"metaSortKey":-1692727448079,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_8b2b3daf860c42398f7a2a2da404fb14","parentId":null,"modified":1692720034219,"created":1692720034219,"name":"istanhack23-backend","description":"","scope":"collection","_type":"workspace"},{"_id":"req_74e6a88684044caa976ffd8d445c9611","parentId":"wrk_8b2b3daf860c42398f7a2a2da404fb14","modified":1692729073442,"created":1692726980522,"url":"http://localhost:3000/issue/social","name":"Request Social Security Credential","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"did\": \"did:ethr:bageth:0x88AfbAc330579E81A7C686e8AbB3Ad712dF74751\",\n\t\"tckk\": \"11111111111\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_32bf48a92bb74ce9a8f30a2de74d40d5"}],"authentication":{},"metaSortKey":-1692726980522,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_1b8616104fe8634fbcbce0cb797360ce03e56f80","parentId":"wrk_8b2b3daf860c42398f7a2a2da404fb14","modified":1692720034235,"created":1692720034235,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1692720034235,"_type":"environment"},{"_id":"jar_1b8616104fe8634fbcbce0cb797360ce03e56f80","parentId":"wrk_8b2b3daf860c42398f7a2a2da404fb14","modified":1692720034239,"created":1692720034239,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_136d1f36eb9a43b8a8aa06449c7bc2d0","parentId":"wrk_8b2b3daf860c42398f7a2a2da404fb14","modified":1692720034223,"created":1692720034223,"fileName":"istanhack23-backend","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-08-22T18:37:49.807Z",
+  "__export_source": "insomnia.desktop.app:v2022.4.1",
+  "resources": [
+    {
+      "_id": "req_fa1367ba8e2b4c6eb9db83ce961b17d6",
+      "parentId": "wrk_8b2b3daf860c42398f7a2a2da404fb14",
+      "modified": 1692729084974,
+      "created": 1692727448079,
+      "url": "http://localhost:3000/onboard",
+      "name": "Onboard",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"credential\": {\n\t\t\"credentialSubject\": {\n\t\t\t\"tckk\": \"11111111111\",\n\t\t\t\"id\": \"did:ethr:bageth:0x88AfbAc330579E81A7C686e8AbB3Ad712dF74751\"\n\t\t},\n\t\t\"issuer\": {\n\t\t\t\"id\": \"did:ethr:bageth:0x02a202fe9df5aee7316ebf19fbda86bb45affe0f67cb9b944e55e00fdc6f40b6b4\"\n\t\t},\n\t\t\"type\": [\n\t\t\t\"VerifiableCredential\"\n\t\t],\n\t\t\"@context\": [\n\t\t\t\"https://www.w3.org/2018/credentials/v1\"\n\t\t],\n\t\t\"issuanceDate\": \"2023-08-22T18:02:29.000Z\",\n\t\t\"proof\": {\n\t\t\t\"type\": \"JwtProof2020\",\n\t\t\t\"jwt\": \"eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7InRja2siOiIxMTExMTExMTExMSJ9fSwic3ViIjoiZGlkOmV0aHI6YmFnZXRoOjB4ODhBZmJBYzMzMDU3OUU4MUE3QzY4NmU4QWJCM0FkNzEyZEY3NDc1MSIsIm5iZiI6MTY5MjcyNzM0OSwiaXNzIjoiZGlkOmV0aHI6YmFnZXRoOjB4MDJhMjAyZmU5ZGY1YWVlNzMxNmViZjE5ZmJkYTg2YmI0NWFmZmUwZjY3Y2I5Yjk0NGU1NWUwMGZkYzZmNDBiNmI0In0.NYMb5f6LaMJdIbLeA2iM2_DNKYJcqfLrdqDT-_xeTdIcuN0C-ERgNBIueAe1N9iL-AQ00V_jSFRgwog-D3JISg\"\n\t\t}\n\t}\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json", "id": "pair_c8a90cb6d0544e708b8d0e34b9afce7b" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1692727448079,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_8b2b3daf860c42398f7a2a2da404fb14",
+      "parentId": null,
+      "modified": 1692720034219,
+      "created": 1692720034219,
+      "name": "istanhack23-backend",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_74e6a88684044caa976ffd8d445c9611",
+      "parentId": "wrk_8b2b3daf860c42398f7a2a2da404fb14",
+      "modified": 1692729073442,
+      "created": 1692726980522,
+      "url": "http://localhost:3000/issue/social",
+      "name": "Request Social Security Credential",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"did\": \"did:ethr:bageth:0x88AfbAc330579E81A7C686e8AbB3Ad712dF74751\",\n\t\"tckk\": \"11111111111\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json", "id": "pair_32bf48a92bb74ce9a8f30a2de74d40d5" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1692726980522,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_1b8616104fe8634fbcbce0cb797360ce03e56f80",
+      "parentId": "wrk_8b2b3daf860c42398f7a2a2da404fb14",
+      "modified": 1692720034235,
+      "created": 1692720034235,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1692720034235,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1b8616104fe8634fbcbce0cb797360ce03e56f80",
+      "parentId": "wrk_8b2b3daf860c42398f7a2a2da404fb14",
+      "modified": 1692720034239,
+      "created": 1692720034239,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_136d1f36eb9a43b8a8aa06449c7bc2d0",
+      "parentId": "wrk_8b2b3daf860c42398f7a2a2da404fb14",
+      "modified": 1692720034223,
+      "created": 1692720034223,
+      "fileName": "istanhack23-backend",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
